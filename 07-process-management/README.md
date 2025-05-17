@@ -30,8 +30,12 @@ A process is an instance of a running program. Linux provides multiple utilities
 - `bg %jobnumber` – Resume a suspended process in the background
 
 ### Monitoring System Processes
-- `top` – Interactive process viewer
+- `top` – Interactive process viewer(cant be used in script)
 - `htop` – User-friendly process viewer (requires installation)
+- `vmstat` - system performance which gives free memory and cache
+- `free -m or free -h` - amount of free memory(-h is human readable format)
+- `df -h` - disk space
+- `du -sh*` - navigate within the folder and execute the command
 - `nice -n 10 command` – Run a command with a specific priority
 - `renice -n -5 -p PID` – Change priority of an existing process
 
